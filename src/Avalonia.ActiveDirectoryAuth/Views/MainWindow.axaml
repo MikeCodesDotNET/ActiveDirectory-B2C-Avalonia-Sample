@@ -1,0 +1,59 @@
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:vm="using:Avalonia.ActiveDirectoryAuth.ViewModels"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d" d:DesignWidth="500" d:DesignHeight="300"
+        Width="500" Height="300"
+        x:Class="Avalonia.ActiveDirectoryAuth.Views.MainWindow"
+        Icon="/Assets/avalonia-logo.ico"
+        Title="Avalonia.ActiveDirectoryAuth">
+
+    <Design.DataContext>
+        <vm:MainWindowViewModel/>
+    </Design.DataContext>
+
+  <Grid RowDefinitions="*, Auto">
+
+    <Border IsVisible="{Binding UserInfo, Converter={x:Static ObjectConverters.IsNotNull}}" 
+            Background="#007FFF" 
+            CornerRadius="5"
+            VerticalAlignment="Center"
+            HorizontalAlignment="Center"
+            MinHeight="150">
+
+      <StackPanel Spacing="25" VerticalAlignment="Center" Margin="15,0">
+        <Grid ColumnDefinitions="Auto, *">
+          <TextBlock Text="Name:  " Foreground="#004080" FontWeight="Medium" FontSize="17"/>
+          <TextBlock Grid.Column="1" Text="{Binding UserInfo.Name}" Foreground="White" FontSize="17"/>
+        </Grid>        
+      
+        <Grid ColumnDefinitions="Auto, *">
+          <TextBlock Text="Email:  " Foreground="#004080" FontWeight="Medium" FontSize="17"/>
+          <TextBlock Grid.Column="1" Text="{Binding UserInfo.Emails[0]}" Foreground="White" FontSize="17"/>
+        </Grid>
+
+        <Grid ColumnDefinitions="Auto, *">
+          <TextBlock Text="Identity Provider:  " Foreground="#004080" FontWeight="Medium" FontSize="17"/>
+          <TextBlock Grid.Column="1" Text="{Binding UserInfo.IdentityProvider}" Foreground="White" FontSize="17"/>
+        </Grid>
+      </StackPanel>
+      
+    </Border>
+    
+    
+    <Button Command="{Binding SignInCommand}" 
+            Grid.Row="1"
+            Margin="25"
+            HorizontalAlignment="Center"
+            HorizontalContentAlignment="Center"
+            VerticalContentAlignment="Center"
+            Content="Sign In" 
+            MinWidth="150" 
+            MinHeight="35" 
+            Background="#007FFF" 
+            Foreground="White"/>
+    
+  </Grid>
+
+</Window>
