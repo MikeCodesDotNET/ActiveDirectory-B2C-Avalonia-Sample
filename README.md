@@ -1,21 +1,21 @@
 # ActiveDirectory B2C - Avalonia Sample
- A small sample that demonstrates how to authenticate with [Active Directory B2C](https://docs.microsoft.com/azure/active-directory-b2c/overview?WT.mc_id=dotnet-Avalonia-mijam) using [Avalonia](https://avaloniaui.net).
+ A small sample that demonstrates how to authenticate with [Active Directory B2C](https://docs.microsoft.com/azure/active-directory-b2c/overview?WT.mc_id=dotnet-0000-mijam) using [Avalonia](https://avaloniaui.net).
 
 ![screenshot](/assets/screenshot.png)
 
 # Getting Started 
 
 ## Prerequisite
-If you don't have an [Azure subscription](https://docs.microsoft.com/azure/guides/developer/azure-developer-guide?WT.mc_id=dotnet-Avalonia-mijam#understanding-accounts-subscriptions-and-billing), create a [free account](https://azure.microsoft.com/free/?ref=microsoft.com&utm_source=microsoft.com&utm_medium=docs&utm_campaign=visualstudio&WT.mc_id=dotnet-Avalonia-mijam) before you begin.
+If you don't have an [Azure subscription](https://docs.microsoft.com/azure/guides/developer/azure-developer-guide?WT.mc_id=dotnet-0000-mijam#understanding-accounts-subscriptions-and-billing), create a [free account](https://azure.microsoft.com/free/?ref=microsoft.com&utm_source=microsoft.com&utm_medium=docs&utm_campaign=visualstudio&WT.mc_id=dotnet-0000-mijam) before you begin.
 
 ---
 
-## Step 1: [Create an Active Directory B2C Tenant](https://docs.microsoft.com/azure/active-directory-b2c/tutorial-create-tenant?WT.mc_id=dotnet-Avalonia-mijam)
+## Step 1: [Create an Active Directory B2C Tenant](https://docs.microsoft.com/azure/active-directory-b2c/tutorial-create-tenant?WT.mc_id=dotnet-0000-mijam)
 
 ---
-## Step 2: [Register the application](https://docs.microsoft.com/azure/active-directory-b2c/tutorial-register-applications?tabs=app-reg-ga&WT.mc_id=dotnet-Avalonia-mijam)
+## Step 2: [Register the application](https://docs.microsoft.com/azure/active-directory-b2c/tutorial-register-applications?tabs=app-reg-ga&WT.mc_id=dotnet-0000-mijam)
 ---
-## Step 3: [Create the user flows](https://docs.microsoft.com/azure/active-directory-b2c/tutorial-create-user-flows?WT.mc_id=dotnet-Avalonia-mijam)
+## Step 3: [Create the user flows](https://docs.microsoft.com/azure/active-directory-b2c/tutorial-create-user-flows?WT.mc_id=dotnet-0000-mijam)
 ---
 ## Step 4: Modify the project Configuration.cs 
 
